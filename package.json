@@ -1,0 +1,18 @@
+{
+  "name": "redcli",
+  "version": "0.0.1",
+  "description": "A reddit command line client written in typescript",
+  "main": "index.js",
+  "repository": "https://github.com/nicpolhamus/redcli",
+  "author": "Nicolas Polhamus",
+  "license": "MIT",
+  "dependencies": {
+    "@types/blessed": "^0.1.10",
+    "@types/inquirer": "^0.0.43",
+    "@types/snoowrap": "^1.16.0",
+    "blessed": "^0.1.81",
+    "inquirer": "^6.2.0",
+    "snoowrap": "^1.15.2",
+    "typescript": "^3.1.1"
+  }
+}
