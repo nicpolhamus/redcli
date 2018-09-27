@@ -6,13 +6,25 @@
   "repository": "https://github.com/nicpolhamus/redcli",
   "author": "Nicolas Polhamus",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json"
+  },
   "dependencies": {
     "@types/blessed": "^0.1.10",
     "@types/inquirer": "^0.0.43",
+    "@types/jest": "^23.3.2",
     "@types/snoowrap": "^1.16.0",
     "blessed": "^0.1.81",
     "inquirer": "^6.2.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
     "snoowrap": "^1.15.2",
+    "ts-jest": "^23.10.2",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.1.1"
   }
 }
