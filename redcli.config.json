@@ -1,0 +1,9 @@
+{
+  "account": {
+    "password": "",
+    "username": "",
+    "secret": "",
+    "clientID": ""
+  },
+  "userAgent": "redcli"
+}
