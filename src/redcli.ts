@@ -1,7 +1,7 @@
 // import config from '../redcli.config.json';
-import * as blessed from 'blessed';
 import { MessageCenter } from './message/messageCenter';
 import { MessageClient } from './message/messageClient';
+import { SubRedditList } from './UI/components/subredditList';
 import { RedUI } from './UI/RedUI';
 
 export class Redcli {
@@ -19,7 +19,13 @@ export class Redcli {
   }
 
   public start(): void {
+    this.initializeUI();
     this.UI.init();
+  }
+
+  private initializeUI(): void {
+    const subredditList = new SubRedditList();
+    this.UI.addComponent(subredditList.SubredditList);
   }
 
   private handleMessage(message: { type: string; data: any }): void {
