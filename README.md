@@ -15,6 +15,7 @@ world.
 
 ## Task list
 
+- [ ] Get UI skeleton laid out *in progress*
 - [ ] setup basic UI
 - [ ] enable basic UI interactions
 - [ ] read config

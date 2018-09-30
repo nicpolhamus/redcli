@@ -10,12 +10,14 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --config jestconfig.json"
+    "test": "jest --config jestconfig.json",
+    "start": "node index.js"
   },
   "dependencies": {
     "@types/blessed": "^0.1.10",
     "@types/inquirer": "^0.0.43",
     "@types/jest": "^23.3.2",
+    "@types/node": "^10.11.3",
     "@types/snoowrap": "^1.16.0",
     "blessed": "^0.1.81",
     "inquirer": "^6.2.0",
