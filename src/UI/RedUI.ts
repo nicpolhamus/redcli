@@ -1,6 +1,7 @@
 import * as blessed from 'blessed';
 import { MessageCenter } from '../message/messageCenter';
 import { MessageClient } from '../message/messageClient';
+import {uiComponents} from './components/ui-components';
 
 export class RedUI {
   private components: blessed.Widgets.Node[] = [];
@@ -16,6 +17,7 @@ export class RedUI {
   }
 
   public init(): void {
+    this.setupBaseLayout();
     this.components.forEach(component => {
       this.screen.append(component);
     });
@@ -31,5 +33,9 @@ export class RedUI {
     this.screen.key(['escape', 'q', 'C-c'], (ch, key) => {
       this.messageCenter.notify({ type: 'exit', data: true }, 'main');
     });
+  }
+
+  private setupBaseLayout(): void {
+    this.components.push(uiComponents.menuBar);
   }
 }

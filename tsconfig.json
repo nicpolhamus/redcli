@@ -3,7 +3,9 @@
     "target": "es2015",
     "module": "commonjs",
     "outDir": "./lib",
-    "strict": true
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "include": [
     "src"
